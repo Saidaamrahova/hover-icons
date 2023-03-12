@@ -1,0 +1,61 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background: #f1f9ff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 100px;
+    margin-top: -100px;
+}
+.socialicons{
+    display: flex;
+}
+.socialicons a{
+    width: 80px;
+    height: 80px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px 10px rgba(0 ,0 ,0, 0.05);
+    margin: 0px 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transform : 0.5s ;
+}
+.socialicons a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.socialicons a::after{
+content: '';
+width: 100%;
+height: 100%;
+top: -90px;
+left: 0;
+background: linear-gradient(-45deg , #ed1c94 ,#ffec17);
+position: absolute;
+transition: 0.5s;
+border-radius: 50%;
+}
+.socialicons a:hover::after{
+    top: 0;
+}
+.socialicons a:hover .fa-brands{
+color: #fff;
+}
+.socialicons a:hover{
+    transform: translateY(-20px);
+}
